@@ -54,9 +54,23 @@ public class Ejercicio2_1 : MonoBehaviour
     int vidasPlayer4 = 8;
     //---------------------------------
 
+    //ejercicio 2.6
+    float primer = 6;
+    float segun = 2;
+    float tercer = 9;
+    //--------------------------
+
     //ejercicio 2.7
     int oro = 7;
     int tiempo = 14400;
+    //----------------------------
+
+
+    //ejercicio 2.8
+    float puntos = 120f;
+    float puntosresta;
+    float puntostotales;
+    //-------------------
 
     // Start is called before the first frame update
     void Start()
@@ -95,28 +109,65 @@ public class Ejercicio2_1 : MonoBehaviour
         Debug.Log("vida jugador2   " + vidasPlayer2);
         Debug.Log("vida jugador3   " + vidasPlayer3);
         Debug.Log("vida jugador4   " + vidasPlayer4);
-        vidasPlayer2 = vidasPlayer3;
+        int  vidasplayerv2  = vidasPlayer3;
         Debug.Log("vida jugador1   " + vidasPlayer1);
-        Debug.Log("vida jugador2   " + vidasPlayer2);
+        Debug.Log("vida jugador2   " + vidasplayerv2);
         Debug.Log("vida jugador3   " + vidasPlayer3);
         Debug.Log("vida jugador4   " + vidasPlayer4);
         vidasPlayer3 = vidasPlayer1;
         Debug.Log("vida jugador1   " + vidasPlayer1);
-        Debug.Log("vida jugador2   " + vidasPlayer2);
+        Debug.Log("vida jugador2   " + vidasplayerv2);
         Debug.Log("vida jugador3   " + vidasPlayer3);
         Debug.Log("vida jugador4   " + vidasPlayer4);
         vidasPlayer1 = vidasPlayer4;
         Debug.Log("vida jugador1   " + vidasPlayer1);
-        Debug.Log("vida jugador2   " + vidasPlayer2);
+        Debug.Log("vida jugador2   " + vidasplayerv2);
         Debug.Log("vida jugador3   " + vidasPlayer3);
         Debug.Log("vida jugador4   " + vidasPlayer4);
         vidasPlayer4 = vidasPlayer2;
+        Debug.Log("vida jugador1   " + vidasPlayer1);
+        Debug.Log("vida jugador2   " + vidasplayerv2);
+        Debug.Log("vida jugador3   " + vidasPlayer3);
+        Debug.Log("vida jugador4   " + vidasPlayer4);
         //---------------------------------
 
+        //ejercicio 2.6
+
+        Debug.Log("puntos primer " + primer);
+        Debug.Log("puntos segun" + segun);
+        Debug.Log("puntos tercer" + tercer);
+        primer *= 0.20f;
+        segun *= 0.40f;
+        tercer *= 0.40f;
+        float  puntospuestos=primer+segun+tercer;
+        Debug.Log("media"+puntospuestos);
+        
+        //-----------------
 
         //ejercicio 2.7
         oro *= tiempo;
         Debug.Log(oro);
+        //---------------------------------
+
+        //ejercicio 2.8
+        Debug.Log(puntos);
+        puntosresta = puntos * 0.03f;
+        puntostotales = puntos - puntosresta;
+        Debug.Log(puntostotales);
+        puntosresta = puntos * 0.06f;
+        puntostotales = puntos - puntosresta;
+        Debug.Log(puntostotales);
+        puntosresta = puntos * 0.09f;
+        puntostotales = puntos - puntosresta;
+        Debug.Log(puntostotales);
+        puntosresta = puntos * 0.12f;
+        puntostotales = puntos - puntosresta;
+        Debug.Log(puntostotales);
+        puntosresta = puntos * 0.15f;
+        puntostotales = puntos - puntosresta;
+        Debug.Log(puntostotales);
+
+        //-----------------------
     }
 
     // Update is called once per frame
