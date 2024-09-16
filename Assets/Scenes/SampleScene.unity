@@ -225,6 +225,8 @@ GameObject:
   - component: {fileID: 1935660938}
   - component: {fileID: 1935660937}
   - component: {fileID: 1935660936}
+  - component: {fileID: 1935660940}
+  - component: {fileID: 1935660939}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -239,7 +241,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935660935}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f934efa2f2168c408c7d8de23c36454, type: 3}
   m_Name: 
@@ -271,6 +273,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935660939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935660935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7350a4a4b47b6b74f9a9855eb023fe5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1935660940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935660935}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d26d5932459a1145a80ee5af122cefc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroEntero: 2
+  numeroEntero2: 3
+  nombre: juan ramirez
+  EXP: 100
+  radio: 9
+  KMH: 120
+  Base: 12
+  Altura: 7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
