@@ -24,7 +24,10 @@ public class Ejercicio7_1 : MonoBehaviour
     [SerializeField] int numero7 = 030;
     [SerializeField] int numero8;
     //-----------------------------------------
-
+    //7.6
+    [SerializeField] int numero9;
+    [SerializeField] int numero10;
+    //-----------------------------------------
 
     // Start is called before the first frame update
     void Start()
@@ -87,13 +90,29 @@ public class Ejercicio7_1 : MonoBehaviour
         while (numero7 > -22)
         {
             numero7--;
-            Debug.Log(numero7 + "    5");
+            Debug.Log(numero7 + "    7");
         }
         for (numero8 = 15; numero8 > -25; numero8--)
         {
             {
 
-                Debug.Log(numero8 + "  6");
+                Debug.Log(numero8 + "  8");
+            }
+
+
+        }
+        //--------------------------------------
+        //7.6
+        while (numero9 < 22)
+        {
+            numero9++;
+            Debug.Log(numero9 + "    9");
+        }
+        for (numero10 = 0; numero10 < 25; numero10++)
+        {
+            {
+
+                Debug.Log(numero10 + "  10");
             }
 
 
