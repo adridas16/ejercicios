@@ -28,6 +28,33 @@ public class Ejercicio5_1 : MonoBehaviour
     [SerializeField] int Nivel = 2;
     //----------------------------------------
 
+    //5.6
+    [SerializeField] int nivelP = 30;
+
+    //----------------------------------------
+
+    //5.7
+    [SerializeField] int velocidad1 = 1;
+    [SerializeField] int velocidad2 = 2;
+    [SerializeField] int velocidad3 = 3;
+
+
+    //----------------------------------------
+
+    //5.8
+    [SerializeField] int H=13;
+    [SerializeField] int M=30;
+    [SerializeField] int S=54;
+
+    //----------------------------------------
+
+    //5.10
+
+    int TP = 10;
+
+    //----------------------------------------
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,8 +86,60 @@ public class Ejercicio5_1 : MonoBehaviour
         //----------------------------------------
 
         //5.5
-       
 
+
+        //----------------------------------------
+
+        //5.6
+        nivelP *= 3;
+        if (nivelP == 30)
+        {
+            Debug.Log("es multiplo");
+        }
+
+        //----------------------------------------
+
+
+        //5.7
+        if (velocidad1 > velocidad2 && velocidad1 > velocidad3) 
+        {
+            Debug.Log(velocidad1+" gana el 1");
+        }
+        if (velocidad2 > velocidad1 && velocidad2 > velocidad3) 
+        {
+            Debug.Log(velocidad2 + " gana el 2");
+        }
+        if (velocidad3 > velocidad2 && velocidad3 > velocidad1) 
+        {
+            Debug.Log(velocidad3 + " gana el 3");
+        }
+        //----------------------------------------
+
+        //5.8
+
+        Debug.Log("hora " + H + ":" + M + ":" + S);
+
+        //----------------------------------------
+
+        //5.10
+
+        if (TP <= 10)
+        {
+            Debug.Log("frio");
+
+        }
+        else if (10<TP&& TP<=20)
+        {
+            Debug.Log("nublado");
+        }
+        else if (20 < TP && TP <= 30)
+        {
+            Debug.Log("nublado");
+        }
+        else if(TP>30)
+        {
+            Debug.Log("Tropical");
+        }
         //----------------------------------------
 
     }
